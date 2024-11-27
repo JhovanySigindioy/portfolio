@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        
+    }
+    to {
+        transform: translateX(0);
+        
+    }
+}
+
+.custom-slide-in-left {
+    animation: slideInLeft .5s ease-in-out;
+    
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        
+    }
+    to {
+        transform: translateX(0);
+        
+    }
+}
+
+.custom-slide-in-right {
+    animation: slideInRight .5s ease-in-out;
+    
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translatey(100%);
+        
+    }
+    to {
+        transform: translatey(0);
+        
+    }
+}
+
+.custom-slide-in-bottom {
+    animation: slideInBottom .5s ease-in-out;
+    
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translatey(200%);
+        
+    }
+    to {
+        transform: translatey(0%);
+        
+    }
+}
+
+.custom-slide-in-top {
+    animation: slideInTop .5s ease-in-out;
+    
+}
+
+
