@@ -1,21 +1,6 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-
-export interface StackTechnical {
-    name: string;
-    technologies: ReactNode; // Ícono representativo de la tecnología
-}
-
-export interface CardProyectProp {
-    urlVideo: string; // URL del video (debe ser corto, alrededor de 5 segundos)
-    nameProyect: string; // Nombre del proyecto
-    description: string;
-    stack: StackTechnical[]; // Tecnologías usadas en el proyecto
-    linksProyect: {
-        urlGitHub: string; // Enlace al repositorio de GitHub
-        urlWebSite: string; // Enlace al sitio web del proyecto
-    };
-}
+import { CardProyectProp } from "../interfaces";
 
 export const CardProyect: React.FC<CardProyectProp> = ({ urlVideo, nameProyect, description, stack, linksProyect }) => {
     return (
@@ -66,7 +51,7 @@ export const CardProyect: React.FC<CardProyectProp> = ({ urlVideo, nameProyect, 
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Repositorio en GitHub"
-                            className="text-2xl text-orange-600 hover:scale-125 transition duration-200"
+                            className="text-2xl text-orange-600 hover:scale-125 transition duration-150"
                         >
                             <FaGithub />
                         </a>
@@ -75,7 +60,7 @@ export const CardProyect: React.FC<CardProyectProp> = ({ urlVideo, nameProyect, 
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Ver sitio web"
-                            className="text-2xl text-orange-600 transition duration-200 hover:scale-125 duration-150"
+                            className="text-2xl text-orange-600 transition hover:scale-125 duration-150"
                         >
                             <FaExternalLinkAlt />
                         </a>

@@ -3,7 +3,7 @@ import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa6";
 import { CardProyect } from "./CardProyect";
 
 const project = {
-  urlVideo: "./video.mp4",
+  urlVideo: "./hiosv.mp4",
   nameProyect: "HIOSV Bicicleteria",
   description: "Sistema para la administración HIOSV Bicicletería, la solución está orientada a optimizar la administración de stock y mejorar la visibilidad de las operaciones diarias.",
   stack: [
@@ -12,8 +12,8 @@ const project = {
     { name: "PostgreSQL", technologies: <FaDatabase className="text-blue-800" /> },
   ],
   linksProyect: {
-    urlGitHub: "www.linkedin.com/in/jhovany-sigindioy",
-    urlWebSite: "https://www.ejemplo.com",
+    urlGitHub: "https://github.com/JhovanySigindioy/stock_bicycle_shop",
+    urlWebSite: "https://hiosv-bicicleteria.netlify.app/",
   },
 };
 

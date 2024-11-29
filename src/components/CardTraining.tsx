@@ -1,23 +1,18 @@
 import React from "react";
-
-export interface CardTrainingProps {
-    logo: string;
-    title: string;
-    description: string;
-    status: string;
-    year: string;
-}
+import { CardTrainingProps } from "../interfaces";
 
 export const CardTraining: React.FC<CardTrainingProps> = ({ logo, title, description, status, year }) => {
     return (
-        <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 ">
-            <div className="flex items-center gap-4 mb-4">
-                <div className="p-1 rounded-full w-[80%]">
-                    <img src={logo} alt={title} />
+        <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 flex flex-col justify-between">
+            <div>
+                <div className="flex items-center gap-4 mb-4">
+                    <div className="p-1 rounded-full w-[80%]">
+                        <img src={logo} alt={title} />
+                    </div>
+                    <h2 className="text-xl font-semibold">{title}</h2>
                 </div>
-                <h2 className="text-xl font-semibold">{title}</h2>
+                <p className="text-sm text-gray-400 mb-4">{description}</p>
             </div>
-            <p className="text-sm text-gray-400 mb-4">{description}</p>
             <div className="flex justify-between items-center">
                 <span
                     className={`px-3 py-1 rounded-full text-sm font-semibold ${status === "En curso"
