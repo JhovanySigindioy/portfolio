@@ -1,4 +1,6 @@
+import { ReactNode } from "react";
+
 export interface SectionConfig {
     id: string;
-    component: React.LazyExoticComponent<React.ComponentType<any>>;
+    component: ReactNode;
 }

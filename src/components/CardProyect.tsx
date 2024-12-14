@@ -51,18 +51,18 @@ export const CardProyect: React.FC<CardProyectProp> = ({ urlVideo, nameProyect, 
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Repositorio en GitHub"
-                            className="text-2xl text-orange-600 hover:scale-125 transition duration-150"
+                            className="flex gap-2 text-2xl text-orange-600 hover:scale-125 transition duration-150"
                         >
-                            <FaGithub />
+                            <FaGithub /><span className="text-sm">Repositorio</span>
                         </a>
                         <a
                             href={linksProyect.urlWebSite}
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Ver sitio web"
-                            className="text-2xl text-orange-600 transition hover:scale-125 duration-150"
+                            className="flex gap-2 text-2xl text-orange-600 transition hover:scale-125 duration-150"
                         >
-                            <FaExternalLinkAlt />
+                            <FaExternalLinkAlt /> <span className="text-sm">Ver sitio</span>
                         </a>
                     </div>
                 </div>

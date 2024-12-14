@@ -5,3 +5,4 @@ export * from "./dashboard/SectionConfig";
 export * from "./cardProyect/CardProyectProp";
 export * from "./cardProyect/StackTechnical";
 export * from "./CardTraining/CardTrainingProps";
+export * from "./CardTraining/TrainingDataItem";

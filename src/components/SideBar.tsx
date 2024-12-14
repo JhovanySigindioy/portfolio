@@ -52,6 +52,8 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                                 id={link.id}
                                 text={link.text}
                                 icon={link.icon}
+                                toggle={toggleSidebar}
+
                             />
                         ))
                     ) : (
@@ -90,7 +92,7 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                             target="_blank"
                             className={`flex items-center gap-2 border-2 border-white ease-in-out hover:scale-110 rounded-lg bg-orange-600 text-sm text-white px-3 py-1 transition-all duration-200`}
                         >
-                            <FaDownload  /><p>Descarga CV</p>
+                            <FaDownload /><p>Descarga CV</p>
                         </a>
                     </div>
                 </div>

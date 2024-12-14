@@ -24,7 +24,7 @@ export const CardSkill: React.FC<CardSkillProps> = ({ name, urlIcon }) => {
                 {/* Línea */}
                 <div className="w-12 sm:w-16 h-1 bg-[#0F172A] group-hover:bg-white group-hover:translate-y-16 transform transition duration-300 mt-1 mb-3"></div>
                 {/* Texto */}
-                <span className="font-medium text-[#0F172A] group-hover:text-white group-hover:-translate-y-4 transform transition duration-300 mt-1">
+                <span  translate="no" className="font-medium text-[#0F172A] group-hover:text-white group-hover:-translate-y-4 transform transition duration-300 mt-1">
                     {name}
                 </span>
             </div>
