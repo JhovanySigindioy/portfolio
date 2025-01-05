@@ -63,7 +63,7 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                     )}
                 </ul>
 
-                <div className="fixed top-[90vh] flex gap-4 justify-center md:justify-start">
+                <div className="fixed top-[80vh] flex gap-4 justify-center md:justify-start">
                     <div className={`flex gap-4`}>
                         <a
                             href="https://www.linkedin.com/in/jhovany-sigindioy/"
@@ -88,7 +88,7 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                             />
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1P3QR0axmDTsNROIpJKZ7DYVxL0LTOQHw/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1MSNK4vaoGvQkNYavYvBsU6jz9m241yrY/view?usp=sharing"
                             target="_blank"
                             className={`flex items-center gap-2 border-2 border-white ease-in-out hover:scale-110 rounded-lg bg-orange-600 text-sm text-white px-3 py-1 transition-all duration-200`}
                         >
