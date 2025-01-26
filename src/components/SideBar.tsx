@@ -88,7 +88,7 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                             />
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1MSNK4vaoGvQkNYavYvBsU6jz9m241yrY/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1ABtt7i9vy4vkPBC1TI8Ab6wCHDNming4/view?usp=sharing"
                             target="_blank"
                             className={`flex items-center gap-2 border-2 border-white ease-in-out hover:scale-110 rounded-lg bg-orange-600 text-sm text-white px-3 py-1 transition-all duration-200`}
                         >
