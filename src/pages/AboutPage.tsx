@@ -55,7 +55,7 @@ const AboutPage: React.FC = () => {
                             />
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1ABtt7i9vy4vkPBC1TI8Ab6wCHDNming4/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1WqK7HUl6EdWqzSNHCvrzRiwKIoOmjWvA/view?usp=sharing"
                             target="_blank"
                             className={`flex items-center gap-2 border-2 border-gray-200 ease-in-out hover:scale-110 rounded-lg bg-orange-600 text-white px-3 py-1 shadow-lg transition-all duration-200`}
                         >
