@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
             <div className={`order-2 md:order-1   ${animate ? "custom-slide-in-left" : "opacity-0"}`}>
                 <header className="flex flex-col gap-1 mb-6 text-center md:text-start">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Hola, soy Wiliam Sigindioy <br />
+                        Hola, soy Wiliam Sigindioy NO JOOODA!!! <br />
                         <span className="text-gray-500">Software Developer</span>
                     </h1>
                 </header>
