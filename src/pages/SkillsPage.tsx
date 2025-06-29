@@ -15,24 +15,15 @@ const skillsFrontend = [
         name: "Redux Toolkit",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
     },
-   
-   
     {
         name: "Tailwind",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
-        name: "Material UI",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
-    },
-    {
         name: "React RouterV6",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg",
     },
-    {
-        name: "Next js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    },
+
 ];
 
 const skillsBackend = [
@@ -51,6 +42,10 @@ const skillsBackend = [
     {
         name: "Express",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    },
+    {
+        name: "Laravel",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
     },
 ]
 

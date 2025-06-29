@@ -7,7 +7,11 @@ export const CardProyect: React.FC<CardProyectProp> = ({ urlVideo, nameProyect, 
         <div className="p-4 hover:scale-105 transition duration-150 w-full">
             <div className="shadow-md shadow-blue-300 rounded-lg bg-white md:w-80 ">
                 {/* Reproductor de video */}
-                <div className="rounded-lg p-1">
+                <a
+                    href={linksProyect.urlWebSite}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Ver sitio web" className="rounded-lg p-1">
                     <video
                         className="w-full h-48 object-cover rounded-lg"
                         src={urlVideo}
@@ -19,7 +23,7 @@ export const CardProyect: React.FC<CardProyectProp> = ({ urlVideo, nameProyect, 
                     >
                         Tu navegador no soporta el elemento <code>video</code>.
                     </video>
-                </div>
+                </a>
 
                 {/* Contenido de la tarjeta */}
                 <div className="p-4">

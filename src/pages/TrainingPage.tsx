@@ -6,11 +6,11 @@ const TrainingPage: React.FC = () => {
 
     const TrainingData: TrainingDataItem[] = [
         {
-            logo: "/logo-itp.webp",
-            title: "Ingeniería en Sistemas - Instituto Tecnológico del Putumayo",
-            description: "Formación universitaria con énfasis en desarrollo de software, abarcando fundamentos de programación, bases de datos y tecnologías web.",
-            year: "2018",
-            status: "Finalizado",
+            logo: "/logo-sena.webp",
+            title: "Técnico - Servicio Nacional de Aprendizaje SENA",
+            description: "Formación con énfasis en desarrollo de móvil, abarcando fundamentos de programación, bases de datos y tecnologías web.",
+            year: "2025",
+            status: "En curso",
         },
         {
             logo: "/logo-talento-tech.webp",
@@ -30,7 +30,7 @@ const TrainingPage: React.FC = () => {
             logo: "logo-sena.webp",
             title: "Despliegue de aplicaciones y servicios en contenedores Docker - SENA",
             description: "Capacitación en creación y gestión de contenedores Docker para aplicaciones escalables y eficientes en producción.",
-            year: "2024",
+            year: "2025",
             status: "En curso",
         },
         {

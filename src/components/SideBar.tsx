@@ -4,10 +4,11 @@ import { SideBarProps } from "../interfaces";
 import { FaBars, FaDownload, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
+import PdfModal from "./PdfModal";
 
 export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
     const [isOpen, setIsOpen] = useState(false); // Estado para controlar la visibilidad del menú
-
+    const [showModal, setShowModal] = useState(false); // Estado para mostrar el modal
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
     };
@@ -87,13 +88,13 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                                 className={`text-orange-600 border-2 border-white rounded-full`}
                             />
                         </a>
-                        <a
-                            href="https://drive.google.com/file/d/1WqK7HUl6EdWqzSNHCvrzRiwKIoOmjWvA/view?usp=sharing"
-                            target="_blank"
-                            className={`flex items-center gap-2 border-2 border-white ease-in-out hover:scale-110 rounded-lg bg-orange-600 text-sm text-white px-3 py-1 transition-all duration-200`}
+                        <button
+                            onClick={() => setShowModal(true)}
+                            className="flex items-center gap-2 border-2 border-gray-200 hover:scale-110 rounded-lg bg-orange-600 text-white px-3 py-1 shadow-lg transition-all duration-200"
                         >
-                            <FaDownload /><p>Descarga CV</p>
-                        </a>
+                            <FaDownload className="text-xl" />
+                            <p>Ver CV</p>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -105,6 +106,11 @@ export const SideBar: React.FC<SideBarProps> = ({ title, subtitle, links }) => {
                 ></div>
             )}
 
+            <PdfModal
+                show={showModal}
+                onClose={() => setShowModal(false)}
+                pdfUrl="/CV_Wiliam_Sigindioy.pdf"
+            />
         </>
     );
 }
